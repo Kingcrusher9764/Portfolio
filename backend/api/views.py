@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from .models import Project, Tag, About
 from rest_framework import generics, status
 from rest_framework.views import APIView
@@ -28,3 +28,7 @@ class ProjectRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
 class AboutList(generics.ListAPIView):
     queryset = About.objects.all()
     serializer_class = AboutSerializer
+
+
+def status(response):
+    return HttpResponse("OK")
