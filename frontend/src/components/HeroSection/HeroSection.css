@@ -1,0 +1,77 @@
+@import url("../../vars.css");
+
+.hero_container{
+    color: var(--text-color);
+    padding: 20px 10%;
+
+    display: flex;
+    align-items: center;
+
+    background: transparent;
+}
+.hero_left{
+    flex: 1;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_left img{
+    width: 60%;
+    border: none;
+    border-radius: 100px;
+}
+
+.hero_right{
+    flex: 1;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+.hero_title{
+    font-size: 60px;
+    font-weight: 900;
+}
+.hero_desc{
+    font-size: 24px;
+    font-weight: 400;
+}
+.button1{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.button1 a{
+    text-decoration: none;
+    color: inherit;
+}
+.button1:hover{
+    color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    .hero_container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero_left{
+        margin: 30px 0px;
+    }
+    .hero_left img{
+        max-height: 700px;
+    }
+    .hero_right{
+        text-align: center;
+        align-items: center;
+    }
+}
