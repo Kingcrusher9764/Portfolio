@@ -77,10 +77,8 @@ DATABASES = {
     }
 }
 
-DATABASES["default"] = dj_database_url.parse(
-    "postgres://portfolio_db_instance_oype_user:BNF5pZcDItsUAlTlk5H4GLn64kyNHYi7@dpg-cpla4tocmk4c739kgmd0-a.oregon-postgres.render.com/portfolio_db_instance_oype"
-)
-# postgres://portfolio_db_instance_oype_user:BNF5pZcDItsUAlTlk5H4GLn64kyNHYi7@dpg-cpla4tocmk4c739kgmd0-a.oregon-postgres.render.com/portfolio_db_instance_oype
+DATABASES["default"] = dj_database_url.parse(os.environ["DATABASE_URL"])
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
