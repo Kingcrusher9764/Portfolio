@@ -10,7 +10,7 @@ const Skill = ({ tags }) => {
             <div className="skills">
                 {tags && Object.keys(tags).map(tag => (
                     <div className="skill_cont" key={`sk${tags[tag].name}`} >
-                        <div className="skill" >
+                        <div className="skill hover:bg-slate-800" >
                             <img src={`${tags[tag].image}`} alt={`${tags[tag].name} icon`} />
                         </div>
                         <h2>{tags[tag].name}</h2>

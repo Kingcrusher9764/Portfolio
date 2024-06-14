@@ -37,17 +37,17 @@ const Navbar = () => {
 
   return (
     <nav className='nav_container'>
-        <h1 className='nav_title'>PORTFOLIO</h1>
+        <h1 className='nav_title'><a href="/" className='text-orange-600'>PORTFOLIO</a></h1>
         <button className='nav_menuIcon' onClick={menuOpen}>
             <i className="ri-menu-line"></i>
         </button>
         <ul className={`nav_menu ${isMenuOpen && 'openMenu'}`}
             onClick={menuClose}
         >
-            <li className='nav_item'><a href="#about">ABOUT</a></li>
-            <li className='nav_item'><a href="#skill">SKILLS</a></li>
-            <li className='nav_item'><a href="#project">PROJECTS</a></li>
-            <li className='nav_item'><a href="#contact">CONTACT</a></li>
+            <li className='nav_item'><a href="#about" className='hover:text-orange-600'>ABOUT</a></li>
+            <li className='nav_item'><a href="#skill" className='hover:text-orange-600'>SKILLS</a></li>
+            <li className='nav_item'><a href="#project" className='hover:text-orange-600'>PROJECTS</a></li>
+            <li className='nav_item'><a href="#contact" className='hover:text-orange-600'>CONTACT</a></li>
         </ul>
     </nav>
   )

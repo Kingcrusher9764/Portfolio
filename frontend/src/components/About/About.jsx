@@ -9,9 +9,9 @@ const About = ({about}) => {
             ABOUT
         </h2>
 
-        <div className="about_cards">
+        <div className="about_cards text-zinc-300">
             {about && about.map(data=>(
-                <div className="about_card" key={`ab${data.id}`}>
+                <div className="about_card hover:shadow-[10px_15px_20px_-15px_rgba(255,255,255,0.3)] hover:text-zinc-200 hover:bg-orange-700" key={`ab${data.id}`}>
                     <h2 className="card_title">
                         {data.title}
                     </h2>

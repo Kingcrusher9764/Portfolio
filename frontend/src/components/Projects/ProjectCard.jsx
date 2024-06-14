@@ -23,7 +23,7 @@ const ProjectCard = ({tags, id, name, desc, techs, link}) => {
         </div>
 
         <div className="links" key={`l${id}`}>
-            <a href={link} target='blank' className='link'><i className="ri-github-fill"></i> Github link</a>
+            <a href={link} target='blank' className='link hover:bg-orange-700'><i className="ri-github-fill"></i> Github link</a>
         </div>
     </div>
   )

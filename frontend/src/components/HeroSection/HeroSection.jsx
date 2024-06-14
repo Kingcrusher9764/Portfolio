@@ -43,7 +43,7 @@ const HeroSection = () => {
 
             <p className='hero_desc'>I'm a developer with knowledge of frontend and backend using React.js, Node.js and Django. Reach out if you'd like to learn more.</p>
 
-            <button className='button1'>
+            <button className='button1 hover:bg-orange-700'>
                 <a href="resume/Resume__.pdf" download="resume">Download Resume <i className="ri-file-download-line"></i></a>
             </button>
         </div>
