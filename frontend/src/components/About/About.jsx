@@ -16,6 +16,8 @@ const About = ({about}) => {
                         {data.title}
                     </h2>
 
+                    <hr />
+                    
                     <p className="card_desc">
                         {data.description}
                     </p>
