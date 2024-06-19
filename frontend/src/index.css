@@ -12,9 +12,9 @@
 body, html{
     background-color: #111;
     scroll-behavior: smooth;
-    /* background-image: url("images/bg.png");
+    background-image: url("images/bg1.webp");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
     /* position: relative; */
 }
